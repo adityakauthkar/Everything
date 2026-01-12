@@ -1,0 +1,50 @@
+*** Object Oriented Programming ***
+
+1.Class 
+-class is a template to create a Object.
+
+2.Object 
+-Object are instance of class . They are real world entity.
+
+3.Pillers of OOP
+
+-Encapsulation
+Encapsulation is binding data and methods together just like a capsule . 
+and just showing only essential details to the user . 
+Can be implemented by using public , Private ketwords 
+
+-Abstraction
+Abstraction is hiding complex details from the user 
+Can implemented by creating pure virtual function 
+
+-Inheritance
+Inheritance is inheriting properties , data , methods from parent class to child class .
+**types **
+1.Single Inheritance
+2.Multilevel Inheritance
+3.Multiple Inheritance 
+4.Hyrarchical Inheritance 
+
+
+-Polymorphism 
+Poly means many forms 
+same function exist in differnet forms
+1. Compile time polymorphism 
+ -Function overloading 
+ -operator overloading
+2.Runtime Polymorphism
+
+
+4.Constructor types : 
+ Default , Parametrized , Copy 
+Destructor
+
+5.Public , Private , Protected
+
+6.static , this , new 
+
+7.Abstract class 
+-you cannot create a Object  of Abstract class 
+
+
+
