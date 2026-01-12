@@ -1,0 +1,68 @@
+**All related to SQL And DBMS **
+
+1.select query
+SELECT column_name FROM table_name ; 
+
+eg. select customerName , City from Customers ; 
+
+2.select all columns
+eg.SELECT * FROM Customers;
+
+3.Selecting DISTINCT elements from columns
+e.g SELECT DISTINCT country FROM Customers;
+
+Counting DISTINCT countries 
+e.g SELECT COUNT(DISTINCT Country) from Customers;
+
+4.WHERE  : filter rows based on specific condition
+e.g SELECT * from Customers WHERE Country = "Mexico";
+WHERE clause is not only used with SELECT but also with UPDATE , DELETE 
+
+BETWEEN , LIKE , IN 
+
+5.ORDER BY : used to sort the records
+e.g SELECT * FROM Products 
+ORDER BY Price ASC ; 
+
+e.g SELECT * FROM Products 
+ORDER BY Price DESC ; 
+
+6. AND Clause is used to filter records based on two condition 
+e.g SELECT * FROM Customers 
+WHERE Country = "Mexico" AND CustId = 21;
+
+7.OR
+
+8.NOT : used for negative result
+e.g SELECT * from Customers
+WHERE NOT Country = "Mexico";
+
+NOT LIKE
+NOT BETWEEN
+NOT IN
+NOT Greater Than
+NOT Les Than
+
+9.INSERT INTO :
+
+CREATE TABLE Customers(
+    CustId VARCHAR PRIMARY_KEY,
+    Firstname CAHR,
+    Lastname CAHR
+    )
+INSERT INTO (CustId , Firstname , Lastname ) values(cust01 , "Aditya" , "Kauthkar");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
