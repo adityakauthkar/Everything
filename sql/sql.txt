@@ -1,5 +1,7 @@
 **All related to SQL And DBMS **
 
+Note : MySQL And SQL server is different
+
 1.select query
 SELECT column_name FROM table_name ; 
 
@@ -52,6 +54,71 @@ CREATE TABLE Customers(
     )
 INSERT INTO (CustId , Firstname , Lastname ) values(cust01 , "Aditya" , "Kauthkar");
 
+10.NULL Values 
+NULL value is no value 
+Null value is the one which has been kept blank while inserting records;
+IS NULL is used to test for empty values 
+
+eg. SELECT CustomerName from Custmer 
+WHERE Address IS NULL ; 
+
+11.UPDATE : is used to modify the existing records 
+eg. UPDATE Customers 
+SET Custmoer_Name = "Aditya Kauthkar"
+WHERE CustId = cust01;
+
+
+12.DELETE : used to delete records
+DELETE FROM Customers WHERE CustomerName = "Aditya Kauthkar";
+
+This will delete all records : DELETE FROM Customers;
+
+13. Drop ; Used to delete whole table 
+DROP table Custmer ; 
+
+14. SELECT TOP : Used to specify the number of records to return 
+e.g. SELECT TOP  3 * FROM Customers;
+
+SELECT * FROM Customers 
+LIMIT 3 ;
+
+*** FOR oracle DB *** 
+SELECT * FROM Customers
+FETCH FIRST 3 ROWS ONLY;
+
+Selecting top 50% of DB 
+SELECT TOP 50 PERCENT * FROM Customers;
+
+//SELECT TOP 3 * FROM Customers
+WHERE Country = "Mexico";
+
+
+15.SQL Aggregate Functions : Functions that perform operations on set of values and return a single value
+MIN() - returns the smallest value within the selected column
+MAX() - returns the largest value within the selected column
+COUNT() - returns the number of rows in a set
+SUM() - returns the total sum of a numerical column
+AVG() - returns the average value of a numerical column
+
+Aggregate functions ignore null values (except for COUNT(*)).
+
+MIN(): SELECT Min(salary) AS smallestSalary FROM Employee; 
+Max(): SELECT Max(salary) AS largestSalary FROM Employee; 
+Avg(): SELECT Avg(salary) AS avgSalary FROM Employee; 
+
+//COUNT : can be used to know number of rows 
+SELECT COUNT(*) FROM Custmer;        //null values are not counting
+
+SELECT COUNT(CustId) FROM Custmers
+where salary > 20000;
+
+16.SUM :
+SELECT SUM(Profit) FROM Customers;
+
+
+
+
+ 
 
 
 
