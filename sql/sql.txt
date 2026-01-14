@@ -115,13 +115,108 @@ where salary > 20000;
 16.SUM :
 SELECT SUM(Profit) FROM Customers;
 
+17.LIKE 
+SELECT * FROM CUSTOMERS 
+WHERE CustomerName LIKE 'a%';
+
+
+18.IN 
+SELECT * FROM Customers 
+WHERE Country IN ('Germany' , 'Mexico' , 'India' ); 
+
+
+19.BETWEEN
+SELECT * FROM Products 
+WHERE Price BETWEEN 10 AND 50;
+
+SELECT * FROM Products 
+WHERE Price NOT BETWEEN 10 AND 50;
+
+SQL Join Clause:
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
+1.INNER JOIN 
+2.LEFT JOIN 
+3.RIGHT JOIN 
+4.FULL OUTER JOIN 
+
+(INNER) JOIN: Returns records that have matching values in both tables
+LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+
+
+
+
+20.Union 
+Union  is used to combine result of tow SELECT Statement 
+Union automatically removes duplicate data.
+SELECT DISTINCT Values only
+
+21.Union All
+Combine two select Statement with duplicate valuesa as well 
+
+
+22.GROUP BY 
+ //Number of customers in each country
+ SELECT COUNT(CustId) FROM Customers
+ GROUP BY Country;
+
+23.HAVING : Having clause is added to SQL because WHERE can not be used with Aggregate Functions
+e.g.
+SELECT COUNT(CustId), Country 
+FORM Customers
+GROUP BY Country
+HAVING  COUNT(CustId) > 10 ;
+
+24.EXISTS: Used to test if the record exist in the subquery
+
+**25.SELECT INTO (used for backup) **
+SELECT * INTO CustomersBackup2017
+FROM Customers;
+
+26.NULL Functions 
+
+
+27.Stored Procedure 
+Stored Procedure is nothing but a function which you can multiple times 
+
+CREATE PROCEDURE SelectAllCustomers
+AS
+SELECT * FROM Customers
+GO;
+
+EXEC SelectAllCustomers;
+
+28/SQL comment 
+--SELECT all
+
+//backup of SQL Database 
+BACKUP DATABASE testDB
+TO DISK = 'D:\backups\testDB.bak';
+
+
+/***********************************************************************************/
+CREATE DATABASE Customers; //ceeating DB
+DROP DATABASE testDB //deleting DB
+DROP TABLE Shippers; //Whole table will be deleted
+TRUNCATE TABLE Shippers //all records will be deleted not table
+
+ALTER: Used to modify the records
+e.g ALTER TABLE Customers
+ADD  reviwes vachar(255);
+
+e.g ALTER TABLE Customers
+DROP COLUMN reviwes;
+
+
+29.Constraints
+NOT NULL 
 
 
 
 
 
-
- 
 
 
 
