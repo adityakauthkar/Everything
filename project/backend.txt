@@ -1,5 +1,38 @@
 -Authentication JWT 
+1.Frontend : username , password  =>POST REQUEST
+2.backend : verifies password stored in database using hashing
+compare enterend pass vs actual pass using BCRYPT 
+3.if matches jwt generates a token 
+4.then that token is stored in localstorage
+5.Include token in headers 
+6.Server verifies the token 
+7.User permission is checked out user.role using middleware 
+
+
+
+
 -Payment using Razorpay 
+1.get key_id , key_secret from Razorpay dashboard
+2.install razorpay SDK 
+3.
+
+
+
+-Role based access 
+the middleware check for instructor or student
+
+
+
+
+
+
+
+
+
+
+
+
+
 -REST Api 
 -middleware 
 -bcryot 

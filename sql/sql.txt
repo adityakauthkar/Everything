@@ -211,7 +211,14 @@ DROP COLUMN reviwes;
 
 
 29.Constraints
-NOT NULL 
+NOT NULL : enforce that value should not be null
+CHECK :
+PRIMARY KEY 
+FOREIGN KEY
+UNIQUE : There may be more unique keys but only one PRIMARY keys
+DEFAULT 
+CREATE INDEX
+
 
 
 
