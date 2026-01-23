@@ -1,0 +1,97 @@
+/* id selector */
+#paragrapgh{
+    color: red;
+    max-width: 20;
+
+}
+
+
+/* type tag eg.para , span , heading  */
+p{
+    color: green;
+}
+
+
+
+
+
+/* universal tag */
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* class selector and box model */
+.firstblock{
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+
+}
+
+
+.childblock{
+    height: 50px;
+    width: 50%;
+    background-color: red;
+}
+
+
+*{
+    background-color: whitesmoke;
+}
+
+/* responsive design */
+/* absoulte (px , cmm , mm) */
+/* relative length (% , viewport) */
+
+/* vw viewport size of tab it is independant on the parent it takes its own dimension based on tab */
+
+
+.email1{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}   
+
+.emailinput{
+    padding: 10px;
+    border-radius: 7px;
+    width: 200px;
+
+}
+
+
+.btn{
+    padding: 10px;
+    width: 220px;
+    background-color: rgb(128, 247, 59);
+    border-radius: 10px;
+}
+
+
+
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  padding: 15px;
+}
+
+.home {
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  width: 70px;
+  height: 40px;
+  
+}
+
+.login {
+  color: black;
+  font-weight: bold;
+}

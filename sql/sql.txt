@@ -179,7 +179,7 @@ FROM Customers;
 
 
 27.Stored Procedure 
-Stored Procedure is nothing but a function which you can multiple times 
+Stored Procedure is nothing but a function which you can use multiple times 
 
 CREATE PROCEDURE SelectAllCustomers
 AS

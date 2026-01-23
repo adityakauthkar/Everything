@@ -28,6 +28,14 @@ the middleware check for instructor or student
 
 
 
+//Node JS / ExpressjS
+npm install express mongoose dotenv cors
+
+
+
+
+
+
 
 
 

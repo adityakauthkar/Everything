@@ -1,0 +1,33 @@
+**FRONTEND -> BACKEND(APIS) -> DATABASE(SQL/NOSQL) -> Deployment (Render/AWS) -> Devops **
+
+//HTML
+<form action="" method="get"> 
+
+<input type="text">
+<label for="password"> </label>
+<input type="password">
+<input type="submit" value="login">
+<input type="number">
+<input type="email">
+<input type="range" min="10" max="15">
+<input type="date" >
+<input type="url" >
+<input type="checkbox" >
+<input type="file" >
+<input type="radio" >
+<input type="button" value="login" >
+<input type="reset"  >
+
+
+//Creating Drop down 
+
+<select>
+<option> BMW </option> 
+<option> Audi </option> 
+<option> Rolls Royals </option> 
+</select>
+
+
+<textarea rows="10" cols="20"> </textarea>
+
+
